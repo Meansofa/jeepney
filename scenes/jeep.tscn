@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2bqrntqwhaop"]
+
+[ext_resource type="Script" uid="uid://jebvg7vf1xvo" path="res://scripts/jeep.gd" id="1_1ybpa"]
+[ext_resource type="Texture2D" uid="uid://clu475ea1rwol" path="res://assets/jeep.png" id="1_x4y2x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ybpa"]
+size = Vector2(90, 339)
+
+[node name="Jeep" type="CharacterBody2D"]
+script = ExtResource("1_1ybpa")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-8, 148)
+rotation = -4.712429
+texture = ExtResource("1_x4y2x")
+offset = Vector2(-142.69583, -6.1340637)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 5.5)
+shape = SubResource("RectangleShape2D_1ybpa")
