@@ -20,8 +20,7 @@ radius = 52.0
 height = 282.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ougvc"]
-radius = 22.0
-height = 104.0
+height = 48.0
 
 [node name="testGame" type="Node2D"]
 z_index = -5
@@ -64,5 +63,5 @@ position = Vector2(241, 346)
 shape = SubResource("CapsuleShape2D_qgp6h")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-149, -471)
+position = Vector2(-144, -454)
 shape = SubResource("CapsuleShape2D_ougvc")
